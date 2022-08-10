@@ -1,0 +1,199 @@
+body {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+
+.toolbar {
+  position: absolute;
+  right: 2em;
+}
+.toolbar li {
+  display: inline-block;
+  padding-left: 15px;
+  vertical-align: middle;
+  color: #737373;
+}
+.toolbar li a {
+  color: currentColor;
+  text-decoration: none;
+}
+.toolbar li a:hover {
+  text-decoration: underline;
+}
+.toolbar li i:hover {
+  color: #272727;
+}
+.toolbar li:hover {
+  cursor: pointer;
+}
+.toolbar li img {
+  width: 65px;
+  height: 30px;
+}
+
+main.home {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -1rem;
+  width: 584px;
+}
+main.home .logo {
+  width: 272px;
+  height: 92px;
+  background-repeat: no-repeat;
+  background-image: url(../images/googlelogo_color_272x92dp.png);
+  background-repeat: no-repeat;
+  background-size: 272px 92px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+main.home .logo:before {
+  content: 'Давай я поищу в';
+  position: absolute;
+  right: 270px;
+  top: 72px;
+  color: #666;
+  font-size: 18px;
+}
+main.home .logo:after {
+  content: 'вместо тебя';
+  position: absolute;
+  right: 110px;
+  top: 72px;
+  color: #666;
+  font-size: 18px;
+}
+main.home .search {
+  height: 44px;
+  width: 584px;
+  line-height: 44px;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  font: 16px arial,sans-serif;
+  background: url(../images/tia.png) 540px center;
+  background-repeat: no-repeat;
+  background-size: 19px 11px;
+  text-indent: 1em;
+}
+main.home .search:hover, main.home .search:focus {
+  outline: none;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+main.home .button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+  -webkit-border-radius: 2px;
+  -webkit-user-select: none;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: default;
+  font-family: arial,sans-serif;
+  text-align: center;
+}
+main.home .button:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  background-color: #f8f8f8;
+  background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-image: -o-linear-gradient(top, #f8f8f8, #f1f1f1);
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  color: #222;
+}
+main.home .button.button-default {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 11px 2px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+}
+main.home .button.g-search {
+  width: 144px;
+  height: 36px;
+  line-height: 36px;
+}
+main.home .button.lucky {
+  width: 144px;
+  height: 36px;
+  line-height: 36px;
+}
+main.home .button-group {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  border-top: 1px solid #e4e4e4;
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+}
+.footer ul {
+  display: inline-block;
+  padding: 0px;
+}
+.footer ul:nth-child(1) {
+  padding-left: 20px;
+}
+.footer ul:nth-child(1) li {
+  padding-right: 15px;
+}
+.footer ul:nth-child(2) {
+  float: right;
+  padding-right: 20px;
+}
+.footer ul:nth-child(2) li {
+  float: right;
+  padding-left: 15px;
+}
+.footer li {
+  display: inline-block;
+}
+.footer li a {
+  color: #666;
+  text-decoration: none;
+}
+.footer li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.link_button {
+    background: #4285f4;
+    padding: 6px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    text-decoration: none;
+}
+.pics {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	height: 90px;
+}
+#about {
+    margin-top: 0.5em;
+    color: #666;
+    text-align: center;
+}
+#about a {color:#8e8e8e;}
+#link_buttons, #link_message, #link { position: absolute; display: none; }
+#link_buttons {margin-top:10px;}
+#instructions {text-align: center; padding: 20px; color:#34a853;font-size: 18px;}
+#fake_mouse { position: absolute; top: -100px; left: -200px; }
+#link {height: 70px; margin-top: 20px;}
+.copyable {width: 250px; height: 32px; text-indent: 5px; font-size: 18px;}
+#link_message { z-index: 99; width: 250px; height: 32px; background-color: #4285F4; color: #fff; line-height: 32px; text-align: center; font-size: 1em; }
